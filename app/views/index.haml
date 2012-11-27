@@ -1,4 +1,9 @@
-- (1...100).each do |post|
+- [1,2,3,4,5,6,7,8,9,10].reverse.each do |post|
   - begin file = File.read("#{settings.public_folder}/posts/#{post}.md") rescue file = nil end
-  .topic-block-list.on-going.chat
-    = markdown(file) unless file.nil?
+  - unless file.nil?
+    .topic-block-list.on-going.chat
+      = markdown(file)
+      %br/
+      ==============================================================================
+      %br/
+      %br/
