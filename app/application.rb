@@ -3,6 +3,7 @@ require 'sinatra/base'
 require 'sinatra/reloader' if development?
 require 'haml'
 require 'yaml'
+require 'rdiscount'
 
 require_relative './routes/init'
 require_relative './models/init'
