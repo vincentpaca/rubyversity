@@ -1,1 +1,4 @@
-
+- (1...100).each do |post|
+  - begin file = File.read("#{settings.public_folder}/posts/#{post}.md") rescue file = nil end
+  .topic-block-list.on-going.chat
+    = markdown(file) unless file.nil?
