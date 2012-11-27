@@ -2,8 +2,9 @@
   .block.sidebar
     %h2
       =link_to '', "ClickingLabs Rubyversity", ""
-      .topic-block-list.chat-topics-sidebar
-        %ul
-          - assignments = { "1" => "Ruby Calisthenics" }
-          - assignments.each do |k, v|
-            %li=link_to "assignments/#{k}", v, ""
+    .topic-block-list.chat-topics-sidebar
+      %br/
+      %ul
+        - assignments = { "1" => "Ruby Calisthenics" }
+        - assignments.each do |k, v|
+          %li=link_to "assignments/#{k}", v, ""
