@@ -3,8 +3,21 @@
     %h2
       =link_to '', "ClickingLabs Rubyversity", ""
     .topic-block-list.chat-topics-sidebar
+      
       %br/
+      %h4 Assignments
+      %br/
+
       %ul
         - assignments = { "1" => "Ruby Calisthenics - Assignment #1" }
         - assignments.each do |k, v|
           %li=link_to "assignments/#{k}", v, ""
+
+      %br/
+      %h4 Notes
+      %br/
+
+      %ul
+        - notes = { "0" => "Development Environment", "1" => "Ruby Basics - Nov 28" }
+        - notes.each do |k, v|
+          %li=link_to "notes/#{k}", v, ""
